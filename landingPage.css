@@ -1,0 +1,183 @@
+@font-face {
+  font-family: quote;
+  src: url(assests/fonts/quotes.otf);
+}
+@font-face {
+  font-family: welcome;
+  src: url(assests/fonts/Avenir-Font/avenir_ff/AvenirLTStd-Roman.otf);
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  padding: 0%;
+  margin: 0%;
+  background-color: rgb(77, 18, 73);
+}
+#left {
+  height: 100vh;
+  width: 50%;
+  background-color: rgba(26, 26, 26, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#logo1 {
+  position: relative;
+  height: auto;
+  width: 50%;
+}
+#right {
+  height: 100vh;
+  width: 50%;
+  position: absolute;
+  top: -0%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: aliceblue;
+  background-color: transparent;
+}
+#heading {
+  font-size: 4.5vw;
+  font-family: welcome;
+  font-weight: bold;
+  padding-bottom: 1%;
+}
+.right {
+  position: absolute;
+  left: 10%;
+}
+#quote {
+  font-family: quote;
+  padding-bottom: 4%;
+  font-size: 18px;
+  display: flex;
+  flex-wrap: wrap;
+}
+#mail {
+  font-family: quote;
+  padding-bottom: 1%;
+}
+#phone {
+  font-family: quote;
+  padding-bottom: 3%;
+}
+#email {
+  height: 60px;
+  min-width: 200px;
+  max-width: 300px;
+  background-color: transparent;
+  color: aliceblue;
+  border-style: none;
+  border: 1px solid wheat;
+  border-radius: 10px;
+  padding-left: 5%;
+  margin-bottom: 5%;
+  font-size: 24px;
+  font-family: welcome;
+}
+::placeholder {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: 24px;
+  /* position: relative; */
+  /* left: 30px; */
+}
+.form {
+  display: flex;
+  flex-wrap: wrap;
+}
+#submit {
+  height: 60px;
+  width: 100px;
+  border-radius: 10px;
+  border-style: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 3%;
+  font-family: quote;
+  color: purple;
+  background-color: wheat;
+  font-size: 16px;
+  cursor: url(assests/cursor/icons8-connect-32.png), auto;
+}
+#submit:hover {
+  color: aliceblue;
+  border: 0.5px solid wheat;
+  background-color: transparent;
+  transition: 0.5s;
+}
+
+/* Media query for computer*/
+
+@media screen and (max-width: 398px) {
+  body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(77, 18, 73);
+  }
+  #heading {
+    font-size: 40px;
+    font-family: welcome;
+    font-weight: bold;
+    padding-bottom: 1%;
+  }
+  #right {
+    height: 100vh;
+    width: 50%;
+    position: absolute;
+    top: -0%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: aliceblue;
+    background-color: transparent;
+    z-index: -1;
+  }
+  #logo1 {
+    position: relative;
+    height: auto;
+    width: 50%;
+    
+  }
+  #left {
+    height: 25vh;
+    width: 60vw;
+    border-radius: 100%;
+    overflow: auto;
+    background-color: rgb(26, 26, 26, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* animation: mobiles 5s ; */
+  }
+  /* logo animation */
+  @keyframes mobiles {
+    10% {
+    border-radius: 100%;
+    height: 100vh;
+
+     
+      transform: scale(-10);
+    }
+    20% {
+      transform: rotateZ(360deg);
+    }
+    40% {
+      
+    }
+    80% {
+      /* transform: rotateZ(360deg); */
+    }
+    100% {
+      
+    }
+  }
+}
